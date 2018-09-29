@@ -42,11 +42,11 @@ class TicTacToeGrid(GridLayout):
 
         winner = None
         if -3 in sums:
-            winner = 'Xs win!'
+            winner = 'Крестик победил!'
         elif 3 in sums:
-            winner = 'Os win!'
+            winner = 'Нолик победил!'
         elif 0 not in self.status:
-            winner = 'Draw...nobody wins!'
+            winner = 'Ничья'
 
         if winner:
             popup = ModalView(size_hint=(0.75, 0.5))
